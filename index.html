@@ -1,29 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Landing Page Design</title>
-        <meta charset="utf-8">
-        <meta name="viewport"content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style3.css">
-    </head> 
-    <body>
-        <div class="container">
-            <div class="row">
-                <nav class="navbar">
-                    <h1>Logo</h1>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Login</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="content">
-                    <h1>Create Your Own Website</h1>
-                    <p>Life is either a adventure or nothing at all</p>
-                    <a href="">Let's start</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rsponsive Registration Form in HTML CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text"placeholder="Enter full name" required/>
+            </div>
+            
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="text"placeholder="Enter email address"  required />
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="number"placeholder="Enter phone number"  required />
+                </div>
+
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date"placeholder="Enter birth date"  required />
+                </div>
+
+             
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked />
+                        <label for="check-male">Male</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" />
+                        <label for="check-female">Female</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender" />
+                        <label for="check-other">Prefer not to say</label>
+                    </div>
                 </div>
             </div>
-        </div>
-    </body>
+
+            <div class="input-box">
+                <label>Address</label>
+                <input type="text"placeholder="Enter street address"  required />
+                <input type="text"placeholder="Enter street address line 2"  required />
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Country</option>
+                            <option>India</option>
+                            <option>America</option>
+                            <option>Japan</option>
+                            <option>China</option>
+                        </select>
+                    </div>
+                    <input type="text"placeholder="Enter your city"  required />
+                </div>
+                <div class="column">
+                    <input type="text"placeholder="Enter your district"  required />
+                    <input type="number"placeholder="Enter you pincode"  required />
+                </div>
+
+            </div>
+         </div>
+             <button>Submit</button>
+        </form>
         
+    </section>
+</body>
+</html>
